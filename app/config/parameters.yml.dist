@@ -1,0 +1,62 @@
+parameters:
+    database_driver:   pdo_mysql
+    database_host:     127.0.0.1
+    database_port:     ~
+    database_name:     wealthbot
+    database_user:     webo
+    database_password: password
+
+    mongodb_host: 127.0.0.1
+    mongodb_database: wealthbot
+    mongodb_user: webo
+    mongodb_password: password
+
+    mailer_transport: smtp
+    mailer_host: smtp.gmail.com
+    mailer_user: wealthbot2018@gmail.com
+    mailer_password: weboDemo32
+    mailer_encryption: ssl
+    mailer_port: 465
+
+    locale:            en
+    secret:            EA155B775CYU8E27997E385A5E4F8349SECRET
+
+    pager_per_page:    10
+
+    site_domain:    local.wealthbot.io
+
+    uploads_dir: "%kernel.root_dir%/../uploads"
+    uploads_ria_company_logos_dir: %uploads_dir%/ria_company_logos
+    uploads_documents_dir: %uploads_dir%/documents
+    uploads_trade_files_dir: '%uploads_dir%/trade_files'
+    active_jobs_dir: '%kernel.root_dir%/../system/incoming_files/active_jobs'
+
+    #docusign
+
+    docusign_username:       0312a719-5724-4d65-b1bd-5f3621ec3b21
+    docusign_password:       weboDemo32
+    docusign_integrator_key:  f441cabd-594c-409e-9d84-c5856d891188
+    docusign_personal_account:               af8d5110-5465-4c9d-8f5a-70a4b817b3c3
+    docusign_ira_account:                    1634b9e1-93b3-4a93-8a80-1ce16a94ec25
+    docusign_electronic_funds_transfer_form: a99a4b2a-a609-4b7f-b25f-96e7544e4ae6
+    docusign_account_transfer_form:          a366b703-c414-40ba-bc6e-f528dc6b3a41
+    docusign_check_request:                  b62c1576-77e5-4327-8138-9abb7ff487a5
+    docusign_wire_instructions:              31f15209-1b84-4282-b359-9bdf5a776fd9
+    docusign_ira_distribution_form:          c67afce6-e8aa-45a9-b4eb-a3dab3023eaa
+    docusign_beneficiary_designation_form:   96100468-3686-4d4d-a203-95f30fb6ae4d
+
+    # For dev.wealthbot.io
+    docusign_brand_id: f3a437dc-d2b2-4dc6-877f-0f62190cb3d7
+
+    # For app.wealthbot.io
+    #docusign_brand_id: 41bc41b6-9619-4849-89f5-4df12176b306
+
+    # For dev-app.wealthbot.io
+    #docusign_brand_id: 4b69d026-6acc-4845-975c-14424c778d42
+
+    # For staging-app.wealthbot.io
+    #docusign_brand_id: d1347a38-6495-425f-aa4f-0dec372e38b3
+
+    #WIN
+    #CentOS
+    wkhtmltopdf_path: "/opt/wkhtmltopdf/bin/wkhtmltopdf"
